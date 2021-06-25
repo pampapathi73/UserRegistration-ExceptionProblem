@@ -34,5 +34,18 @@ namespace TestProject1
                 Assert.AreEqual("Invalid LastName", e.Message);
             }
         }
+        [Test]
+        public void GivenNullEmailID_ShouldThrow_UserRegistrationCustomException()
+        {
+            try
+            {
+                bool expected = true;
+                Assert.AreEqual(expected, patternsMatch.ValidateEmailId(null));
+            }
+            catch (UserRegistrationCustomException e)
+            {
+                Assert.AreEqual("Invalid Email ID", e.Message);
+            }
+        }
     }
 }

@@ -14,6 +14,9 @@ namespace UserRegistrationExceptionProblem
             Console.WriteLine("Enter LastName:");
             string lastName = Console.ReadLine();
             Console.WriteLine("LastName:" + patternsMatch.ValidateLastName(lastName));
+            Console.WriteLine("Enter EmailID:");
+            string emailId = Console.ReadLine();
+            Console.WriteLine("EmailID:" + patternsMatch.ValidateEmailId(emailId));
         }
     }
 }
