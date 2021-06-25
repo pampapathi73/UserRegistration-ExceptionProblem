@@ -20,6 +20,9 @@ namespace UserRegistrationExceptionProblem
             Console.WriteLine("Enter Mobile Number:");
             string mobileNumber = Console.ReadLine();
             Console.WriteLine("Mobile Number:" + patternsMatch.ValidateMobileNumber(mobileNumber));
+            Console.WriteLine("Enter Password:");
+            string password = Console.ReadLine();
+            Console.WriteLine("Password:" + patternsMatch.ValidatePassword(password));
         }
     }
 }
